@@ -1,16 +1,21 @@
-# BEE 4750 Homework 0
+# BEE 4750 Homework 1
 
-Instructions: [![Web Instructions](https://img.shields.io/static/v1?label=HW0&message=HTML&color=b31b1b&labelColor=222222&style=flat)](https://viveks.me/environmental-systems-analysis/assignments/hw0/hw0/) [![PDF Instructions](https://img.shields.io/static/v1?label=HW0&message=PDF&color=b31b1b&labelColor=222222&style=flat)](https://viveks.me/environmental-systems-analysis/assignments/hw0/hw0.pdf)
+Instructions: [![Web Instructions](https://img.shields.io/static/v1?label=HW1&message=HTML&color=b31b1b&labelColor=222222&style=flat)](https://viveks.me/environmental-systems-analysis/assignments/hw1/hw1/) [![PDF Instructions](https://img.shields.io/static/v1?label=HW1&message=PDF&color=b31b1b&labelColor=222222&style=flat)](https://viveks.me/environmental-systems-analysis/assignments/hw1/hw1.pdf)
 
-This homework assignment is intended to make sure that students can install Julia, use Github to clone the homework repository, and use Gradescope to submit solutions. Please contact the instructor and TA if there are any hiccups.
+This homework assignment is focused on simulating a systems model under uncertainty to evaluate risk.
 
 ## Learning Objectives
 
-Homework 0 is intended to get you up and running with cloning the assignments using Github, installing and using Julia, and submitting the assignments. It will only be graded based on completion, but make sure you don't run into any problems with this workflow, which will be repeated for future homework assignments.
+After completing Homework 1, students will be able to:
+
+* write a simulations model for a system;
+* analyze systems dynamics through simulations;
+* determine management strategies based on simulations results;
+* quantify risk using Monte Carlo analyses.
 
 ## What To Submit
 
-Submit a single `.pdf` file to Gradescope. Make sure to tag each problem. You should include code with your submission in code blocks as needed for your solution. Similarly, figures should be captioned appropriately. You'll be walked through creating a document in this fashion in this assignment. Note that some prompts (like pre-specified code blocks) will not be included in future assignment instructions and templates, and you will need to include those as specified here. **Make sure that your final report includes a References section!**
+Submit a single `.pdf` file to Gradescope. Make sure to tag each problem. You should include code with your submission in code blocks as needed for your solution. Similarly, figures should be captioned appropriately.  **Make sure that your final report includes a References section!**
 
 To generate your `.pdf` locally, you'll need to have LaTeX and Julia installed on your system. From your local HW repository directory, run the `compile_report.jl` script:
 
