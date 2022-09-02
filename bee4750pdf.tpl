@@ -1,8 +1,9 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 
 \usepackage[a4paper,text={16.5cm,25.2cm},centering, margin=1in]{geometry}
 
-\usepackage[scale=0.8]{FiraMono}
+\usepackage[scale=0.95]{FiraMono}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{mathpazo}
 
@@ -48,8 +49,6 @@
 \begin{document}
 
 {{#:title}}\maketitle{{/:title}}
-
-\tableofcontents
 
 {{{ :body }}}
 
