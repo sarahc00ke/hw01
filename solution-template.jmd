@@ -3,8 +3,12 @@ title: "BEE 4750/5750 Homework 0"
 author: "Your name here (your netID here)"
 date: `j import Dates; Dates.Date(Dates.now())`
 weave_options:
-  term: true
-  cache: off
+	term: true
+	cache: off
+	md2pdf:
+		template: "bee4750pdf.tpl"
+    md2html:
+        template: "bee4750html.tpl"
 ---
 
 <!-- This setups the environment and installs packages, but doesn't appear in the generated document -->
