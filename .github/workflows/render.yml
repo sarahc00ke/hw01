@@ -4,6 +4,9 @@ on:
     branches: 
       - main
       - Spring24
+    paths-ignore:
+      - '**/README.md'
+      - '**.ipynb'
 
 name: Quarto Publish
 
