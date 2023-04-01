@@ -3,7 +3,7 @@ on:
   push:
     branches: 
       - main
-      - Spring24
+      - Fall23
     paths-ignore:
       - '**/README.md'
       - '**.ipynb'
