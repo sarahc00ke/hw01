@@ -166,7 +166,7 @@ The flow of wastewater through this treatment system is shown in @fig-wastewater
 
 ```{julia}
 #| label: fig-wastewater
-#| fig-cap: "Systems diagram of the wastewater treatment options in Problem 5."
+#| fig-cap: "System diagram of the wastewater treatment options in Problem 4."
 using GraphRecipes, Plots
 
 A = [0 1 1 1;
