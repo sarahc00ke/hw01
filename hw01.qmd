@@ -52,6 +52,7 @@ Otherwise, you can [find the Github repository here]({{< var github_org.repo >}}
 The following code loads the environment and makes sure all needed packages are installed. This should be at the start of most Julia scripts.
 
 ```{julia}
+#| output: false
 import Pkg
 Pkg.activate(@__DIR__)
 Pkg.instantiate()
