@@ -1,9 +1,9 @@
+// See https://github.com/julia-vscode/julia-devcontainer/blob/master/Dockerfile for image contents
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/eitsupi/devcontainer-features/julia:0": {
-        "version": "1.8.5",
-        "allowNonStableVersion": true
-    }
-}
+	"name": "Julia (Community)",
+	"runArgs" ["--init"],
+	"image": "ghcr.io/julia-vscode/julia-devcontainer",
+	"extensions": ["julialang.language-julia", "ms-toolsai.jupyter"],
+	"postCreateCommand": "/julia-devcontainer-scripts/postcreate.jl",
+	"remoteUser": "vscode"
 }
