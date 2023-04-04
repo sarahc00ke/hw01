@@ -3,7 +3,7 @@
 	"name": "Julia (Community)",
 	"runArgs": ["--init"],
 	"image": "ghcr.io/julia-vscode/julia-devcontainer",
-	"extensions": ["julialang.language-julia", "ms-toolsai.jupyter"],
+	"extensions": ["julialang.language-julia", "ms-toolsai.jupyter", "ms-python.python"],
 	"postCreateCommand": "/julia-devcontainer-scripts/postcreate.jl",
 	"remoteUser": "vscode"
 }
