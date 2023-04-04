@@ -39,3 +39,5 @@ Manifest.toml
 *.html
 
 .DS_Store
+
+*_files/
