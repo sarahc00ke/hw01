@@ -13,7 +13,6 @@ format:
         code-annotation: below
 jupyter: julia-1.8
 format-links: [pdf]
-freeze: false
 ---
 
 ::: {.content-visible when-format="ipynb"}
