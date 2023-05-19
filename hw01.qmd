@@ -4,15 +4,12 @@ format:
     html:        
         warning: true
         error: true
-    pdf:
-        warning: true
-        error: true
     ipynb:
         warning: true
         error: true
         code-annotation: below
 jupyter: julia-1.9
-format-links: [pdf]
+format-links: []
 ---
 
 ::: {.content-visible when-format="ipynb"}
