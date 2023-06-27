@@ -8,7 +8,7 @@ format:
         warning: true
         error: true
         code-annotation: below
-jupyter: julia-1.8
+jupyter: julia-1.9
 format-links: []
 ---
 
