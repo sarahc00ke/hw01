@@ -232,3 +232,9 @@ Make sure you comment your code appropriately to make it clear what is going on 
 
 Use your function to experiment with some different combinations of wastewater discharge and treatment. Can you find one that satisfies the YUK effluent standard? What was the cost? You don't have to find an "optimal" solution to this problem, but what do you think would be needed to find a better solution?
 :::
+
+::: {.cell .markdown}
+## References
+
+List any external references consulted, including classmates.
+:::
