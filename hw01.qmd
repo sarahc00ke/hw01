@@ -24,7 +24,7 @@ format-links: [ipynb]
 ::: {.callout-important icon=false}
 ### Due Date
 
-Friday, 9/8/23, 9:00pm
+Thursday, 9/5/23, 9:00pm
 :::
 
 ::: {.content-visible when-format="html"}
@@ -43,7 +43,9 @@ Otherwise, you can [find the Github repository here]({{< var github_org.repo >}}
 
 ### Instructions
 
-- Problems 1-3 consist of a series of code snippets for you to interpret and debug. For Problems 1 and 2, you will be asked to identify relevant error(s) and fix the code. For Problem 3, the code works as intended; your goal is to identify the code's purpose by following its logic.
+- Problem 1 consist of a series of code snippets for you to interpret and debug. You will be asked to identify relevant error(s) and fix the code. 
+- Problem 2 gives you some code that works as intended; your goal is to identify the code's purpose by following its logic.
+- Problem 3 asks you to write code to generate a random vector and subtract off its mean, using a Julia syntax called broadcasting.
 - Problem 4 asks you to convert a verbal description of a wastewater treatment system into a Julia function, and then to use that function to explore the impact of different wastewater allocation strategies.
 
 ### Load Environment
@@ -57,15 +59,23 @@ Pkg.activate(@__DIR__)
 Pkg.instantiate()
 ```
 
+Standard Julia practice is to load all needed packages at the top of a file. If you need to load any additional packages in any assignments beyond those which are loaded by default, feel free to add a `using` statement, though [you may need to install the package](https://viveks.me/environmental-systems-analysis/tutorials/julia-basics.html#package-management).
+
 ```{julia}
+using Random
 using Plots
 using GraphRecipes
 using LaTeXStrings
 ```
 
+```{julia}
+# this sets a random seed, which ensures reproducibility of random number generation. You should always set a seed when working with random numbers.
+Random.seed!(1)
+```
+
 ## Problems (Total: 50 Points)
 
-### Problem 1 (10 points)
+### Problem 1 (15 points)
 
 The following subproblems all involve code snippets that require debugging. For each of them:
 
@@ -107,8 +117,25 @@ end
 @show average_grade;
 ```
 
+#### Problem 1.3 
+
+Your team wants to know the expected payout of an old Italian dice game called *passadieci* (which was analyzed by Galileo as one of the first examples of a rigorous study of probability). The goal of passadieci is to get at least an 11 from rolling three fair, six-sided dice. Your strategy is to compute the average wins from 1,000 trials, but the code you've written below produces an error.
 
 
+```{julia}
+function passadieci()
+    # this rand() call samples 3 values from the vector [1, 6]
+    roll = rand(1:6, 3) 
+    return roll
+end
+n_trials = 1_000
+outcomes = zero(n_trials)
+for i = 1:n_trials
+    outcomes[i] = (sum(passadieci()) > 11)
+end
+win_prob = sum(outcomes) / n_trials # compute average number of wins
+@show win_prob;
+```
 
 ### Problem 2 (5 points)
 
@@ -143,8 +170,7 @@ You're interested in writing some code to remove the mean of a vector.
 
 
 
-
-### Problem 4 (15 points)
+### Problem 4 (20 points)
 
 Cheap Plastic Products, Inc. is operating a plant that produces $100 \text{m}^3\text{/day}$ of wastewater that is discharged into Pristine Brook. The wastewater contains $1 \text{kg/m}^3$ of YUK, a toxic substance. The US Environmental Protection Agency has imposed an effluent standard on the plant prohibiting discharge of more than $20 \text{kg/day}$ of YUK into Pristine Brook.
 
@@ -160,8 +186,6 @@ The flow of wastewater through this treatment system is shown in @fig-wastewater
 ```{julia}
 #| label: fig-wastewater
 #| fig-cap: "System diagram of the wastewater treatment options in Problem 4."
-
-using GraphRecipes, Plots
 
 A = [0 1 1 1;
 	0 0 0 1;
