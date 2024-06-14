@@ -47,6 +47,7 @@ Otherwise, you can [find the Github repository here]({{< var github_org.repo >}}
 - Problem 2 gives you some code that works as intended; your goal is to identify the code's purpose by following its logic.
 - Problem 3 asks you to write code to generate a random vector and subtract off its mean, using a Julia syntax called broadcasting.
 - Problem 4 asks you to convert a verbal description of a wastewater treatment system into a Julia function, and then to use that function to explore the impact of different wastewater allocation strategies.
+- Problem 5 (5750 only) asks you to use more advanced Julia techniques.
 
 ### Load Environment
 
@@ -73,7 +74,7 @@ using LaTeXStrings
 Random.seed!(1)
 ```
 
-## Problems (Total: 50 Points)
+## Problems (Total: 50/60 Points)
 
 ### Problem 1 (15 points)
 
@@ -236,3 +237,34 @@ display(p)
   ```
   Make sure you comment your code appropriately to make it clear what is going on and why.
 * Use your function to experiment with some different combinations of wastewater discharge and treatment and plot the results of these experiments. Can you find one that satisfies the YUK effluent standard (plot this as well as a dashed red line)? What was the cost? What can you say about the tradeoff between treatment cost and YUK concentration? You don't have to find an "optimal" solution to this problem, but what do you think would be needed to find a better solution? 
+
+### Problem 5 (10 points)
+
+::: {.cell .markdown}
+
+#### Problem 5.1
+
+Using a [comprehension](https://viveks.me/environmental-systems-analysis/tutorials/julia-basics.html#comprehensions), count the number of odd numbers between 0 and 149.
+
+:::
+
+::: {.callout-tip}
+## Hint
+
+`iseven()` returns `true` for even numbers and `false` for odd numbers.
+:::
+
+::: {.cell .markdown}
+#### Problem 5.2
+
+Write a function `polynomial(x, a)` which calculates the polynomial
+$$p(x) = \sum_{i=1}^n a_i x^i$$ 
+
+based on a point `x` and a coefficient vector `a` of length `n` using `enumerate()` in a loop. Test your function by computing $$p(x) = 2x^3 - x^2 + 1$$ at $x=2$.
+:::
+
+::: {.cell .markdown}
+## References
+
+List any external references consulted, including classmates.
+:::
