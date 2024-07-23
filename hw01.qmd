@@ -240,6 +240,8 @@ display(p)
 
 ### Problem 5 (10 points)
 
+**This problem is only required for students in BEE 5750**.
+
 ::: {.cell .markdown}
 
 #### Problem 5.1
@@ -260,7 +262,7 @@ Using a [comprehension](https://viveks.me/environmental-systems-analysis/tutoria
 Write a function `polynomial(x, a)` which calculates the polynomial
 $$p(x) = \sum_{i=1}^n a_i x^i$$ 
 
-based on a point `x` and a coefficient vector `a` of length `n` using `enumerate()` in a loop. Test your function by computing $$p(x) = 2x^3 - x^2 + 1$$ at $x=2$.
+based on a point `x` and a coefficient vector `a` of length `n` using a loop. Test your function by computing $$p(x) = 2x^3 - x^2 + 1$$ at $x=2$.
 :::
 
 ::: {.cell .markdown}
