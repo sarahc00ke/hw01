@@ -24,7 +24,7 @@ format-links: [ipynb]
 ::: {.callout-important icon=false}
 ### Due Date
 
-Thursday, 9/5/23, 9:00pm
+Thursday, 9/5/24, 9:00pm
 :::
 
 ::: {.content-visible when-format="html"}
