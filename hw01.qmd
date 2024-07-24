@@ -9,10 +9,16 @@ format:
         warning: true
         error: true
         code-annotation: below
+    pdf:
+        include-in-header: 
+           text: |
+            \usepackage{fvextra}
+            \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+            \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines,commandchars=\\\{\}}
 execute: 
     echo: true
 engine: julia
-format-links: [ipynb]
+format-links: [pdf, ipynb]
 ---
 
 ::: {.content-visible when-format="ipynb"}
