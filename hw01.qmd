@@ -10,6 +10,8 @@ format:
         error: true
         code-annotation: below
     pdf:
+        warning: true
+        error: true
         include-in-header: 
            text: |
             \usepackage{fvextra}
