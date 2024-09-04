@@ -193,7 +193,7 @@ Cheap Plastic Products has analyzed two methods for reducing its discharges of Y
 
 Method 2 is a chemical treatment procedure which costs \$1.50 per $\text{m}^3$ of wastewater treated. The chemical treatment has an efficiency of $e= 1 - 0.005X_2$, where $X_2$ is the quantity of wastewater ($\text{m}^3\text{/day}$) treated. For example, if $X_2 = 50 \text{m}^3\text{/day}$, then $e = 1 - 0.005(50) = 0.75$, so that 75% of the YUK is removed.
 
-Cheap Plastic Products is wondering how to allocate their wastewater between these three disposal and treatment methods (land disposal, and chemical treatment, and land disposal) to meet the effluent standard while keeping costs manageable.
+Cheap Plastic Products is wondering how to allocate their wastewater between these three disposal and treatment methods (land disposal, chemical treatment, and direct disposal) to meet the effluent standard while keeping costs manageable.
 
 The flow of wastewater through this treatment system is shown in @fig-wastewater. Modify the edge labels (by editing the `edge_labels` dictionary in the code producing @fig-wastewater) to show how the wastewater allocations result in the final YUK discharge into Pristine Brook. For the `edge_label` dictionary, the tuple $(i, j)$ corresponds to the arrow going from node $i$ to node $j$. The syntax for any entry is `(i, j) => "label text"`, and the label text can include mathematical notation if the string is prefaced with an `L`, as in `L"x_1"` will produce $x_1$.
 
